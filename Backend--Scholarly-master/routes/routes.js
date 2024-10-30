@@ -1,0 +1,13 @@
+const express = require("express");
+const usercontroller = require("../controller/userController");
+const router = express.Router();
+router.post("/sign-up", usercontroller.addUser);
+router.post("/sign-in", usercontroller.signInUser);
+router.post("/user-info", usercontroller.userInfo);
+router.post("/update_user-info", usercontroller.updateuserInfo);
+router.post("/all-scholarships", usercontroller.scholarshipsData);
+router.post("/individual-scholarship", usercontroller.sendscholarshipData);
+router.post("/find-status", usercontroller.find_status);
+router.post("/change_status", usercontroller.change_status);
+router.get("/getPopular", usercontroller.getPopular);
+module.exports = router;

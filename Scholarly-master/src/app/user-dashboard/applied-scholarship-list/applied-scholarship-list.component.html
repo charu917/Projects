@@ -1,0 +1,33 @@
+<div class="card-orig p-4">
+  <div
+    class="d-flex flex-column w-100"
+    *ngIf="user_data && user_data.Scholarships"
+  >
+    <div
+      class="headings d-flex flex-row justify-content-between w-100 mb-2"
+      style="font-size: 1.3rem; font-weight: 600"
+    >
+      <div class="title">Title</div>
+      <div class="status">Status</div>
+    </div>
+    <div
+      *ngFor="let scholarship of user_data.Scholarships"
+      class="d-flex flex-row justify-content-between w-100"
+    >
+      <div class="scholarship">{{ scholarship.title | formatTitle }}</div>
+      <div class="status">
+        <span *ngIf="scholarship.status.applied">Applied</span>
+        <span *ngIf="scholarship.status.applied && scholarship.status.saved"
+          >/</span
+        >
+        <span *ngIf="scholarship.status.saved">Saved</span>
+      </div>
+    </div>
+  </div>
+  <div
+    *ngIf="user_data && !user_data.Scholarships"
+    style="font-size: 1.3rem; font-weight: 600"
+  >
+    No Scholarships Selected!
+  </div>
+</div>

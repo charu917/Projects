@@ -1,0 +1,103 @@
+<!-- profile data in a form -->
+<div style="min-height: 80vh" class="d-flex flex-column justify-content-center">
+  <div class="heading text-center mt-3">Update Details</div>
+  <div class="d-flex justify-content-center align-items-center mb-3">
+    <form class="w-30 mt-3" [formGroup]="updateform" (ngSubmit)="update_data()">
+      <input
+        type="text"
+        aria-label="First name"
+        class="form-control mb-2"
+        placeholder="first name"
+        formControlName="firstName"
+      />
+      <input
+        type="text"
+        aria-label="Last name"
+        class="form-control mb-2"
+        placeholder="last name"
+        formControlName="lastName"
+      />
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email address"
+          aria-label="Email address"
+          aria-describedby="basic-addon1"
+          formControlName="email"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          aria-label="Password"
+          aria-describedby="basic-addon1"
+          formControlName="password"
+        />
+      </div>
+      <input
+        type="number"
+        class="form-control mb-2"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default"
+        placeholder="enter your 10th percentage"
+        formControlName="percentage10th"
+      />
+      <input
+        type="number"
+        class="form-control mb-2"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default"
+        placeholder="enter your 12th percentage"
+        formControlName="percentage12th"
+      />
+      <div class="input-group mb-2">
+        <label class="input-group-text" for="inputGroupSelect01"
+          >UG Degree</label
+        >
+        <select
+          class="form-select"
+          id="inputGroupSelect01"
+          formControlName="ugDegree"
+        >
+          <option selected value="B.A">B.A</option>
+          <option value="B.tech">B.tech</option>
+          <option value="BBA">BBA</option>
+          <option value="LLB">LLB</option>
+        </select>
+      </div>
+      <input
+        type="number"
+        class="form-control mb-2"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default"
+        placeholder="enter your UG percentage"
+        formControlName="percentageUg"
+      />
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect02"
+          >Intended Degree</label
+        >
+        <select
+          class="form-select"
+          id="inputGroupSelect02"
+          formControlName="intendedDegree"
+        >
+          <option selected value="M.A">M.A</option>
+          <option value="M.tech">M.tech</option>
+          <option value="MBA">MBA</option>
+          <option value="MD">MD</option>
+        </select>
+      </div>
+      <button
+        class="btn btn-dark w-100 mt-2 mb-2"
+        [disabled]="updateform.invalid"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

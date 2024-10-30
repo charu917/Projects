@@ -1,0 +1,26 @@
+<div class="pb-4 pt-4">
+  <div class="ps-4 mt-3">
+    <div class="ps-4 comp-heading">Popular Scholarships on Scholarly</div>
+  </div>
+  <div class="p-4 pt-0" *ngIf="popular">
+    <div class="d-flex flex-row flex-wrap">
+      <app-scholarship-card
+        *ngFor="let scholarship of popular; let i = index"
+        [scholarship]="scholarship"
+        [index]="i + 1"
+      ></app-scholarship-card>
+    </div>
+  </div>
+  <div *ngIf="!popular">
+    <div
+      class="text-center"
+      style="
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: rgba(128, 128, 128, 0.553);
+      "
+    >
+      Loading...
+    </div>
+  </div>
+</div>

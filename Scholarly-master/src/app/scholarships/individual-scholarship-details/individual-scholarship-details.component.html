@@ -1,0 +1,82 @@
+<div
+  class="d-flex justify-content-between p-4 ms-3"
+  style="min-height: 68vh"
+  *ngIf="scholarshipData.heading"
+>
+  <div class="leftdata w-50">
+    <div class="d-flex align-items-start mb-2">
+      <img
+        [src]="scholarshipData.imgUrl"
+        alt=""
+        class="me-4"
+        style="height: 150px"
+      />
+
+      <div>
+        <div class="heading" style="font-weight: 700; font-size: 1.7rem">
+          {{ scholarshipData.heading }}
+        </div>
+        <div>
+          <div class="markers">{{ scholarshipData.markers }}</div>
+          <div class="status fw-bold" style="text-decoration: underline">
+            {{ scholarshipData.status }}
+          </div>
+          <a class="links text-reset fw-bold" [href]="scholarshipData.link"
+            >Share</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="description mt-3" style="font-size: 1rem; color: gray">
+      {{ scholarshipData.description }}
+    </div>
+  </div>
+  <div class="w-50">
+    <div
+      class="heading text-center"
+      style="font-weight: 600; font-size: 1.5rem; color: gray"
+    >
+      Overview
+    </div>
+    <div class="rightdata w-100 d-flex flex-column align-items-center mt-1">
+      <div class="overview w-50 border border-gray p-3" style="color: gray">
+        <div *ngFor="let key of scholarshipData.overview">{{ key }}</div>
+      </div>
+      <button
+        class="btn w-50 mt-3"
+        style="font-weight: 600; font-size: 1rem"
+        [class.btn-danger]="!applied"
+        [class.btn-success]="applied"
+        (click)="updateStatus(scholarshipData.heading)"
+      >
+        {{ statusApplied }}
+      </button>
+      <button
+        class="btn w-50 mt-2"
+        style="font-weight: 600; font-size: 1rem"
+        [class.btn-secondary]="!saved"
+        [class.btn-dark]="saved"
+        (click)="updateSaveStatus(scholarshipData.heading)"
+      >
+        {{ SaveStatus }}
+      </button>
+    </div>
+  </div>
+</div>
+<div
+  class="d-flex flex-column justify-content-center align-items-center w-100 p-4"
+  style="min-height: 68vh"
+  *ngIf="!scholarshipData.heading"
+>
+  <div>
+    <div
+      class="select-scholarship mb-3"
+      style="font-size: 1.7rem; font-weight: 700"
+    >
+      Select scholarships!
+    </div>
+    <button class="btn goback btn-dark w-100" (click)="backtoScholarships()">
+      All Scholarships
+    </button>
+  </div>
+</div>

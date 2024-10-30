@@ -1,0 +1,32 @@
+<nav
+  class="d-flex flex-row justify-content-between p-2 ps-5 pe-5 align-items-center shadow-bottom"
+>
+  <a class="nav-logo" routerLink="/">Scholarly</a>
+
+  <div class="input-group w-25">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Scholarships"
+      aria-label="Scholarships"
+      aria-describedby="button-addon2"
+      [(ngModel)]="searchQuery"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="click"
+      id="button-addon2"
+      (click)="loadIndividual()"
+    >
+      Search
+    </button>
+  </div>
+  <ul
+    class="custom-list d-flex justify-content-between ps-0 w-12 align-items-center mb-0"
+  >
+    <li><a class="color-black" routerLink="/dashboard">My Profile</a></li>
+    <li class="custom-btn">
+      <a class="color-white" (click)="loggingOut()">Log Out</a>
+    </li>
+  </ul>
+</nav>

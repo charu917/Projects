@@ -1,0 +1,43 @@
+<div class="d-flex flex-column bg-gray" style="min-height: 110vh">
+  <ul
+    class="custom-list d-flex flex-column ps-0 align-items-start mt-5 aside-font ps-5"
+  >
+    <li class="mb-4"><a routerLink="/" class="color-black">Home</a></li>
+    <li class="mb-4">
+      <a routerLink="/all-scholarships" class="color-black">Scholarships</a>
+    </li>
+    <!-- bootstrap dropdown -->
+    <div class="dropdown-center mb-4">
+      <button
+        class="dropdown-toggle p-0 aside-font"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        style="border: none; background: transparent; color: black"
+      >
+        Categories
+      </button>
+      <ul class="dropdown-menu p-3 ms-2" style="width: 20vw">
+        <div class="d-flex flex-column">
+          <li>
+            <a class="dropdown-item">Indian Scholarships</a>
+          </li>
+          <li>
+            <a class="dropdown-item">International Scholarships</a>
+          </li>
+        </div>
+        <div class="d-flex flex-column">
+          <li><a class="dropdown-item">Minority Scholarships </a></li>
+          <li><a class="dropdown-item">Scholarships for Girls</a></li>
+        </div>
+        <div class="d-flex">
+          <li>
+            <a class="dropdown-item">Below Poverty Line Scholarships </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <!-- demo of the website in get started -->
+    <li class="mb-4"><a class="color-black" routerLink="/">Get Started</a></li>
+  </ul>
+</div>

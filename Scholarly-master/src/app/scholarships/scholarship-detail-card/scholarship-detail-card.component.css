@@ -1,0 +1,19 @@
+.heading {
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+.description,
+.state {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.604);
+}
+.state,
+.status {
+  font-weight: 600;
+}
+.status {
+  background-color: rgba(0, 128, 0, 0.417);
+}
+.img {
+  background-color: rgba(128, 128, 128, 0.202);
+}

@@ -1,0 +1,43 @@
+<div
+  class="card-orig d-flex flex-column justify-content-center mt-4 align-items-center p-4"
+>
+  <div>
+    <div class="heading mb-2">User Data</div>
+    <div class="user-details">
+      <div *ngIf="user_data">
+        <div>
+          <span class="fw-bold">Name </span> {{ user_data.name.first }}
+          {{ user_data.name.last }}
+        </div>
+        <div class="mb-1">
+          <span class="fw-bold">Email </span> {{ user_data.email }}
+        </div>
+        <div>
+          <span class="fw-bold">percentage(10th) </span>
+          {{ user_data.percentage10th }}
+        </div>
+        <div>
+          <span class="fw-bold">percentage(12th) </span>
+          {{ user_data.percentage12th }}
+        </div>
+        <div class="mb-1">
+          <span class="fw-bold">percentage(UG) </span>
+          {{ user_data.percentageUg }}
+        </div>
+        <div>
+          <span class="fw-bold">UG Degree </span> {{ user_data.ugDegree }}
+        </div>
+        <div>
+          <span class="fw-bold">Intended Degree </span>
+          {{ user_data.intendedDegree }}
+        </div>
+      </div>
+      <div *ngIf="!user_data">loading...</div>
+    </div>
+  </div>
+</div>
+<div>
+  <a class="btn btn-dark w-100 mt-3" routerLink="/update-profile"
+    >Update Profile</a
+  >
+</div>

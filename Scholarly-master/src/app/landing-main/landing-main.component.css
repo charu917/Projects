@@ -1,0 +1,27 @@
+.custom-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.bg-main-right {
+  background-color: rgba(128, 128, 128, 0.077);
+}
+.custom-list {
+  list-style-type: none;
+}
+.headings-main {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.content-main {
+  font-size: 1.5rem;
+  font-weight: 300;
+}

@@ -1,0 +1,19 @@
+.newsletter,
+.links-box {
+  color: white;
+  font-size: 1rem;
+}
+.w-35 {
+  width: 35%;
+}
+.button-submit {
+  background-color: rgba(132, 132, 132, 0.378);
+  color: white;
+  border: none;
+  padding: 5px;
+}
+.input-form {
+  border: none;
+  outline: none;
+  padding: 5px;
+}

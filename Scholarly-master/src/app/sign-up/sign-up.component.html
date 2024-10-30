@@ -1,0 +1,116 @@
+<div
+  class="d-flex flex-column align-items-center justify-content-center"
+  style="min-height: 90vh"
+>
+  <div class="main-card w-50 d-flex flex-row">
+    <div class="info-card w-50 me-3">
+      <div class="heading text-center mb-2">Sign Up</div>
+      <form
+        class="d-flex flex-column"
+        [formGroup]="signUpForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <input
+          type="text"
+          aria-label="First name"
+          class="form-control mb-2"
+          placeholder="first name"
+          formControlName="firstName"
+        />
+        <input
+          type="text"
+          aria-label="Last name"
+          class="form-control mb-2"
+          placeholder="last name"
+          formControlName="lastName"
+        />
+        <input
+          type="password"
+          class="form-control mb-2"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="create new password"
+          formControlName="password"
+        />
+        <input
+          type="password"
+          class="form-control mb-2"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="confirm password"
+          formControlName="confirmPassword"
+        />
+        <input
+          type="email"
+          class="form-control mb-2"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="enter your email id"
+          formControlName="email"
+        />
+        <input
+          type="number"
+          class="form-control mb-2"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="enter your 10th percentage"
+          formControlName="percentage10th"
+        />
+        <input
+          type="number"
+          class="form-control mb-2"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="enter your 12th percentage"
+          formControlName="percentage12th"
+        />
+        <div class="input-group mb-2">
+          <label class="input-group-text" for="inputGroupSelect01"
+            >UG Degree</label
+          >
+          <select
+            class="form-select"
+            id="inputGroupSelect01"
+            formControlName="ugDegree"
+          >
+            <option selected value="B.A">B.A</option>
+            <option value="B.tech">B.tech</option>
+            <option value="BBA">BBA</option>
+            <option value="LLB">LLB</option>
+          </select>
+        </div>
+        <input
+          type="number"
+          class="form-control mb-2"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="enter your UG percentage"
+          formControlName="percentageUg"
+        />
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect02"
+            >Intended Degree</label
+          >
+          <select
+            class="form-select"
+            id="inputGroupSelect02"
+            formControlName="intendedDegree"
+          >
+            <option selected value="M.A">M.A</option>
+            <option value="M.tech">M.tech</option>
+            <option value="MBA">MBA</option>
+            <option value="MD">MD</option>
+          </select>
+        </div>
+        <button
+          type="submit"
+          [disabled]="signUpForm.invalid"
+          class="btn btn-dark"
+        >
+          Create Account
+        </button>
+      </form>
+    </div>
+    <div class="img-card w-50"></div>
+  </div>
+</div>

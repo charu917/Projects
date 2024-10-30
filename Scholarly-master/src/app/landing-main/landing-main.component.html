@@ -1,0 +1,78 @@
+<div class="d-flex">
+  <div class="p-4 w-50">
+    <div>
+      <ul class="custom-list headings-main">
+        <li>Where your scholarship</li>
+        <li>
+          <span
+            ><img
+              src="../../assets/ScreenShot Tool -20240404010004.png"
+              alt="" /></span
+          ><span class="ms-2">Search</span>
+        </li>
+        <li>ENDS</li>
+      </ul>
+      <ul class="custom-list">
+        <li class="mb-4 content-main">
+          <div>Find personalised recommendations</div>
+          <div>and popular scholarships without any hassle.</div>
+        </li>
+        <li class="custom-btn">
+          <a
+            routerLink="all-scholarships"
+            class="text-reset"
+            style="text-decoration: none"
+            >Discover</a
+          >
+        </li>
+      </ul>
+      <ul class="list-group p-4 w-50 pt-2">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="card-font">Indian Scholarships</div>
+          </div>
+          <span class="badge text-bg-primary rounded-pill"></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="card-font">International Scholarships</div>
+          </div>
+          <span class="badge text-bg-primary rounded-pill"></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="card-font">Minority Scholarships</div>
+          </div>
+          <span class="badge text-bg-primary rounded-pill"></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="card-font">Scholarships for Girls</div>
+          </div>
+          <span class="badge text-bg-primary rounded-pill"></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="card-font">Below poverty line</div>
+            <div>Scholarships</div>
+          </div>
+          <span class="badge text-bg-primary rounded-pill"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="w-50 bg-main-right"></div>
+</div>
+<div>
+  <app-scholarships-display [popular]="popular"></app-scholarships-display>
+</div>

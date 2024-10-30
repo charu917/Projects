@@ -1,0 +1,21 @@
+.custom-index {
+  color: rgb(230, 230, 230);
+  font-size: 30px;
+  font-weight: 500;
+}
+.scholarship-org {
+  color: rgb(41, 41, 41);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.date-time {
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+}
+.scholarship-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.shadow-subtle {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

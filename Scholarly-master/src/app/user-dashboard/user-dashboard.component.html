@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-between">
+  <div class="w-20">
+    <app-left-options></app-left-options>
+  </div>
+  <div class="w-75 d-flex flex-row justify-content-between">
+    <div class="w-60">
+      <div class="d-flex justify-content-between mt-4">
+        <app-status-card
+          text="Applied"
+          [count]="count_applied"
+        ></app-status-card>
+        <app-status-card text="Saved" [count]="count_saved"></app-status-card>
+        <app-status-card text="Both" [count]="count_both"></app-status-card>
+      </div>
+      <div class="mt-5">
+        <app-applied-scholarship-list
+          [user_data]="user_data"
+        ></app-applied-scholarship-list>
+        <div class="text-center mt-4">
+          <a
+            routerLink="/all-scholarships"
+            class="text-reset"
+            style="font-size: 1.3rem; font-weight: 600"
+            >Browse Latest Scholarships</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="w-25 d-flex me-5">
+      <div class="mb-3">
+        <app-profile-card [user_data]="user_data"></app-profile-card>
+        <div class="mt-3">
+          <app-notification-card></app-notification-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

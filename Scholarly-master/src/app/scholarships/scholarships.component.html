@@ -1,0 +1,21 @@
+<div class="d-flex flex-row w-100" style="min-height: 68vh">
+  <div class="scholarships d-flex flex-column align-items-center w-75">
+    <div class="w-100 d-flex justify-content-center" *ngIf="hide">
+      <div
+        class="loading color-black"
+        style="font-weight: 700; font-size: 1.7rem"
+      >
+        Loading...
+      </div>
+    </div>
+    <div class="w-100" *ngIf="!hide">
+      <app-scholarship-detail-card
+        *ngFor="let scholarship of scholarships"
+        [scholarshipData]="scholarship"
+      ></app-scholarship-detail-card>
+    </div>
+  </div>
+  <div class="filter-card">
+    <app-filter-box></app-filter-box>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.img-card {
+  background-color: rgba(128, 128, 128, 0.159);
+}
+.note {
+  font-size: 0.9rem;
+  color: gray;
+}

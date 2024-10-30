@@ -1,0 +1,54 @@
+<nav
+  class="d-flex flex-row justify-content-between p-2 ps-5 pe-5 align-items-center shadow-bottom"
+>
+  <a class="nav-logo" routerLink="/">Scholarly</a>
+  <ul
+    class="custom-list d-flex justify-content-between ps-0 w-25 align-items-center mb-0"
+  >
+    <li><a routerLink="/" class="color-black">Home</a></li>
+    <li>
+      <a routerLink="/all-scholarships" class="color-black">Scholarships</a>
+    </li>
+    <!-- bootstrap dropdown -->
+    <div class="dropdown-center">
+      <button
+        class="dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        style="border: none; background: transparent; color: black"
+      >
+        Categories
+      </button>
+      <ul class="dropdown-menu p-3" style="width: 37vw">
+        <div class="d-flex justify-content-between">
+          <li>
+            <a class="dropdown-item">Indian Scholarships</a>
+          </li>
+          <li>
+            <a class="dropdown-item">International Scholarships</a>
+          </li>
+        </div>
+        <div class="d-flex justify-content-between">
+          <li><a class="dropdown-item">Minority Scholarships </a></li>
+          <li><a class="dropdown-item">Scholarships for Girls</a></li>
+        </div>
+        <div class="d-flex justify-content-between">
+          <li>
+            <a class="dropdown-item">Below Poverty Line Scholarships </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <li><a routerLink="/sign-up" class="color-black">Get Started</a></li>
+  </ul>
+  <ul
+    class="custom-list d-flex justify-content-between ps-0 w-10 align-items-center mb-0"
+  >
+    <li><a routerLink="/sign-in" class="color-black">Sign In</a></li>
+    <li class="custom-btn">
+      <a routerLink="/sign-up" class="color-white">Sign Up</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,14 @@
+.count {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.category {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+}
+.bg-box {
+  border: 1px solid rgba(128, 128, 128, 0.122);
+  background-color: rgba(128, 128, 128, 0.091);
+}

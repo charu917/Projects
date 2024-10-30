@@ -1,0 +1,45 @@
+<div
+  class="d-flex flex-column align-items-center justify-content-center"
+  style="min-height: 90vh"
+>
+  <div class="sign-in-card w-50 d-flex flex-row">
+    <div class="img-card w-50 me-4"></div>
+    <div class="info-card w-50">
+      <div class="heading text-center mb-2">Sign In</div>
+      <form
+        class="d-flex flex-column"
+        [formGroup]="signInForm"
+        (ngSubmit)="OnSubmit()"
+      >
+        <div class="input-group mb-2">
+          <input
+            type="email"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="enter your email id"
+            formControlName="email"
+          />
+        </div>
+        <div class="input-group mb-2">
+          <input
+            type="password"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="enter your password"
+            formControlName="password"
+          />
+        </div>
+        <div class="note mb-3 ms-1">Forgot Password?</div>
+        <button
+          type="submit"
+          class="btn btn-dark"
+          [disabled]="signInForm.invalid"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

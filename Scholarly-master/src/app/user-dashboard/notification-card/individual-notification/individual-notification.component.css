@@ -1,0 +1,18 @@
+.custom-index {
+  color: rgb(230, 230, 230);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.name-time {
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+}
+.notification {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.shadow-subtle {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  border: 1px solid rgba(128, 128, 128, 0.321);
+}
